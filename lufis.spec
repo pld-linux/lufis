@@ -1,4 +1,5 @@
 Summary:	Wrapper to use lufs modules with fuse kernel support
+Summary(pl):	Wrapper do u¿ywania modu³ów lufs z j±drem obs³uguj±cym fuse
 Name:		lufis
 Version:	0.2
 Release:	0.1
@@ -15,6 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Wrapper to use lufs modules with fuse kernel support.
 
+%description -l pl
+Wrapper do u¿ywania modu³ów lufs z j±drem obs³uguj±cym fuse.
+
 %prep
 %setup -q
 %patch0 -p1
@@ -24,9 +28,9 @@ Wrapper to use lufs modules with fuse kernel support.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-install -d $RPM_BUILD_ROOT/%{_bindir}
-install lufis $RPM_BUILD_ROOT/%{_bindir}/lufis
+install -d $RPM_BUILD_ROOT%{_bindir}
+
+install lufis $RPM_BUILD_ROOT%{_bindir}/lufis
 
 %clean
 rm -rf $RPM_BUILD_ROOT
