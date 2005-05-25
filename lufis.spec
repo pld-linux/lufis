@@ -2,7 +2,7 @@ Summary:	Wrapper to use lufs modules with fuse kernel support
 Summary(pl):	Wrapper do u¿ywania modu³ów lufs z j±drem obs³uguj±cym fuse
 Name:		lufis
 Version:	0.3
-Release:	2
+Release:	3
 Epoch:		0
 License:	GPL v2
 Group:		Applications/System
@@ -12,7 +12,6 @@ Patch0:		%{name}-no_lufs.patch
 Patch1:		%{name}-allow-uid-and-gid-addon.patch 
 URL:		http://fuse.sourceforge.net/
 BuildRequires:	libfuse-devel
-Requires:	fusermount
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
