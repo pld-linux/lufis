@@ -8,8 +8,7 @@ License:	GPL v2
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/fuse/%{name}-%{version}.tar.gz
 # Source0-md5:	fd3e4eebf3967b75157bc42418326d03
-Patch0:		%{name}-no_lufs.patch
-Patch1:		%{name}-allow-uid-and-gid-addon.patch 
+Patch0:		%{name}-allow-uid-and-gid-addon.patch 
 URL:		http://fuse.sourceforge.net/
 BuildRequires:	libfuse-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,7 +22,6 @@ Wrapper do u¿ywania modu³ów lufs z j±drem obs³uguj±cym fuse.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__make}
