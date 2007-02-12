@@ -1,5 +1,5 @@
 Summary:	Wrapper to use lufs modules with fuse kernel support
-Summary(pl):	Wrapper do uøywania modu≥Ûw lufs z j±drem obs≥uguj±cym fuse
+Summary(pl.UTF-8):   Wrapper do u≈ºywania modu≈Ç√≥w lufs z jƒÖdrem obs≈ÇugujƒÖcym fuse
 Name:		lufis
 Version:	0.3
 Release:	3
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Wrapper to use lufs modules with fuse kernel support.
 
-%description -l pl
-Wrapper do uøywania modu≥Ûw lufs z j±drem obs≥uguj±cym fuse.
+%description -l pl.UTF-8
+Wrapper do u≈ºywania modu≈Ç√≥w lufs z jƒÖdrem obs≈ÇugujƒÖcym fuse.
 
 %prep
 %setup -q
